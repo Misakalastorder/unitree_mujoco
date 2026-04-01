@@ -4,10 +4,10 @@ import mujoco.viewer
 from threading import Thread
 import threading
 
-from unitree_sdk2py.core.channel import ChannelFactoryInitialize
-from unitree_sdk2py_bridge import UnitreeSdk2Bridge, ElasticBand
+from simulate_python.unitree_sdk2py.core.channel import ChannelFactoryInitialize
+from simulate_python.unitree_sdk2py_bridge import UnitreeSdk2Bridge, ElasticBand
 
-import config
+from simulate_python import config
 
 
 locker = threading.Lock()
