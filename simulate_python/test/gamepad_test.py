@@ -12,11 +12,11 @@ else:
     sys.exit()
 
 while True:
-    # for event in pygame.event.get():
-    #     if event.type == pygame.JOYBUTTONDOWN:
-    #         print(f"Button pressed： {event.button}")
-    #     elif event.type == pygame.JOYBUTTONUP:
-    #         print(f"Button released： {event.button}")
+    for event in pygame.event.get():
+        if event.type == pygame.JOYBUTTONDOWN:
+            print(f"Button pressed： {event.button}")
+        elif event.type == pygame.JOYBUTTONUP:
+            print(f"Button released： {event.button}")
     pygame.event.get()
         # 读取轴位置
     axes = joystick.get_button(0)
